@@ -1,0 +1,13 @@
+@inject CrudComponentRouterService ComponentRouter 
+
+<h1>Search</h1>
+<button @onclick="@OnEdit">Edit</button>
+
+@code
+{
+
+    public void OnEdit(MouseEventArgs args)
+    {
+        this.ComponentRouter.Navigate(RouterState.Edit);
+    }
+}

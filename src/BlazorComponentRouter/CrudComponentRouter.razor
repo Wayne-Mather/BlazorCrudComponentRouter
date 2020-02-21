@@ -1,0 +1,52 @@
+@inject CrudComponentRouterService RouterService
+
+@if (RouteState == RouterState.Search)
+{
+    @SearchComponent
+}
+
+@if (RouteState == RouterState.Create)
+{
+    @CreateComponent
+}
+@if (RouteState == RouterState.Delete)
+{
+    @DeleteComponent
+}
+
+@if (RouteState == RouterState.Edit)
+{
+    @EditComponent
+}
+
+
+@code {
+
+    [Parameter]
+    public RouterState RouteState { get; set; }
+
+    [Parameter]
+    public RenderFragment SearchComponent { get; set; }
+
+    [Parameter]
+    public RenderFragment EditComponent { get; set; }
+
+    [Parameter]
+    public RenderFragment DeleteComponent { get; set; }
+
+    [Parameter]
+    public RenderFragment CreateComponent { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        this.RouterService.RegisterRouter(this);
+    }
+
+    public void Navigate(RouterState state)
+    {
+        this.RouteState = state;
+        StateHasChanged();
+    }
+
+}

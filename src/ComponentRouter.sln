@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentRouter", "ComponentRouter\ComponentRouter.csproj", "{64D86F0B-F8A7-44FB-838F-F388A59D74DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorComponentRouter", "BlazorComponentRouter\BlazorComponentRouter.csproj", "{410EBD62-180F-4FBA-95DE-181272D64FE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D86F0B-F8A7-44FB-838F-F388A59D74DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D86F0B-F8A7-44FB-838F-F388A59D74DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D86F0B-F8A7-44FB-838F-F388A59D74DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D86F0B-F8A7-44FB-838F-F388A59D74DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410EBD62-180F-4FBA-95DE-181272D64FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410EBD62-180F-4FBA-95DE-181272D64FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410EBD62-180F-4FBA-95DE-181272D64FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410EBD62-180F-4FBA-95DE-181272D64FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+@inject CrudComponentRouterService ComponentRouter 
+
+<h1>Edit</h1>
+<button @onclick="@OnDelete">Delete</button>
+<button @onclick="@OnSearch">Search</button>
+
+@code
+{
+
+    public void OnDelete(MouseEventArgs args)
+    {
+        this.ComponentRouter.Navigate(RouterState.Delete);
+    }
+
+    public void OnSearch(MouseEventArgs args)
+    {
+        this.ComponentRouter.Navigate(RouterState.Search);
+    }
+}
