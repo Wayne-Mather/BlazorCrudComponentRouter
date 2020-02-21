@@ -14,7 +14,8 @@ The ComponentRouter site shows how to use it but its as follows:
 2) Call services.AddComponentRouter(); in the Startup:ConfigureServices() method
 3) add the following to your MVC View/Razor page:
 
-<CrudComponentRouter>
+```
+ <CrudComponentRouter>
     <SearchComponent>
         Component or Text for Search Route
     </SearchComponent>
@@ -28,6 +29,7 @@ The ComponentRouter site shows how to use it but its as follows:
         Component or Text for Create Route
     </CreateComponent>
 </CrudComponentRouter>
+```
 
 4) To navigate from within your components 
    Add @inject CrudComponentRouterService ComponentRouter 
