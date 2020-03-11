@@ -1,22 +1,19 @@
 @inject CrudComponentRouterService RouterService
 
-@if (RouteState == RouterState.Search)
+@switch (RouteState)
 {
-    @SearchComponent
-}
-
-@if (RouteState == RouterState.Create)
-{
-    @CreateComponent
-}
-@if (RouteState == RouterState.Delete)
-{
-    @DeleteComponent
-}
-
-@if (RouteState == RouterState.Edit)
-{
-    @EditComponent
+    case RouterState.Search:
+        @SearchComponent
+        break;
+    case RouterState.Create:
+        @CreateComponent
+        break;
+    case RouterState.Delete:
+        @DeleteComponent
+        break;
+    case RouterState.Edit:
+        @EditComponent
+        break;
 }
 
 
